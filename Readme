@@ -1,0 +1,85 @@
+*******************************************************
+* Name      : Ravisher Singh
+* Student ID: 101844874
+* Class     :  CSC 2421
+* HW#       :  Final
+* Due Date  :  December 5th, 2020
+*******************************************************
+Read Me
+
+********************************************************
+
+Description of the program
+
+In this program we have to build a Movie Database and perform different operations.
+We are given with 2 csv files and we store the data from both the files into the Binary
+Search Tree.User makes the selection which file he wants to perform operations on whether
+on pictures.csv BST database or actor-actress.csv BST. BST uses the structs to read in the
+data from the files.Both binary search trees utilize a specific struct for their information.Once files are read in , user is given with options to enter 1) actor/actress database 2) pictures database 3) exit the program. Once you have enter the database user is prompted with same options 1)add a record 2) search a record
+3) modify the fields 4)sort by any single sortable field 5) Full search only on searchable field
+6) Partial search on searchable field 7) : Choose either the movie or actor database, and
+print out a .csv file of the latest database  8) return to main menu 9) to exit the program
+*******************************************************
+
+NOTE: Partial search, Full Search and Sorting is only on searchable and sortable fields  and also in order to make interface look better it is better to work with only certain fields.
+
+
+********************************************************
+Source files
+*******************************************************
+Name: main.cpp
+Gives the user option to enter pictures or actors database 
+Or exit.(input validation performed)
+
+*******************************************************
+Name:  Pictures.h
+has functions definition to load the pictures database from csv file to BST file,
+displaying a menu, adding record, modifying the field, sorting based on sortable fields
+Writing it to csv file, doing a full search and partial search.
+
+*******************************************************
+Name: Pictures.cpp
+Defines and implements all the functionality within the picture data base. Functions 
+are defined for adding a record, deleting a record, modifying a record, print tree,
+sorting tree, complete search, partial search, and writing tree to new csv file.
+*******************************************************
+
+Name:Actors.h
+has function definition to load the actor/actress database from csv file to BST file,
+displaying a menu, adding record, modifying the field, sorting based on sortable fields
+Writing it to csv file, doing a full search and partial search.
+
+*******************************************************
+
+Name: Actors.cpp
+
+Defines and implements all the functionality within the actor data base. Functions 
+are defined for adding a record, deleting a record, modifying a record, print tree,
+sorting tree, complete search, partial search, and writing tree to new csv file.
+
+
+
+*******************************************************
+
+Name: BST.h
+Defines and implements the templated BSTree class. The destructor, clear, delete node, 
+add node, search, and print functions are all defined. 
+*******************************************************
+
+Circumstances of programs
+*******************************************************
+The program runs successfully.The program was developed and tested on gnu g++ 4.4.2.  It was compiled, run, and tested on gcc ouray.cudenver.edu.
+********************************************************
+How to build and run the program
+*******************************************************
+1.  Uncompress the homework.  The homework file is compressed.To uncompress it use the following commands% unzip SinghRavisher_HW02
+Now you should see a directory named homework with the files:
+
+main.cpp
+Actors.cpp
+Pictures.cpp
+
+2.  Build the program.
+Change to the directory that contains the file by:% cd [CSCI2421FINALRS]
+Compile the program by:% make
+3.  Run the program by:% ./CSCI2421FINALRS
